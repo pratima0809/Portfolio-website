@@ -48,7 +48,7 @@ export default function Hero() {
         <motion.div variants={item} className="flex flex-col items-center gap-8 lg:flex-row lg:items-start lg:gap-12">
           <div className="flex-1">
             <h1 className="display text-5xl font-bold leading-[0.92] tracking-[0.04em] text-ink md:text-7xl lg:text-[5.5rem]">
-              PRATIMA
+              <span className="animate-typed inline-block w-full">{IDENTITY.codeName}</span>
               <br />
               <span className="text-gradient-cyber">VANAKHADE</span>
             </h1>

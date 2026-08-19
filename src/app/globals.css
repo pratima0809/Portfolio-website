@@ -417,6 +417,25 @@
   animation: flicker 6s linear infinite;
 }
 
+@keyframes typed {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typed-cursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: currentColor;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .animate-pulse-soft,
   .animate-ping-ring,
@@ -425,7 +444,17 @@
   .animate-ticker-x,
   .animate-dash-flow,
   .animate-spin-slow,
-  .animate-flicker {
+  .animate-flicker,
+  .animate-typed,
+  .animate-typed-cursor {
     animation: none;
   }
+}
+
+.animate-typed {
+  animation: typed 4s steps(40, end) forwards;
+}
+
+.animate-typed-cursor {
+  animation: typed-cursor 0.8s step-end infinite;
 }
