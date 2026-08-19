@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Chakra_Petch, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import ThemeInitializer from "@/components/ThemeInitializer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -63,12 +64,7 @@ export default function RootLayout({
       className={`${inter.variable} ${chakra.variable} ${jetbrains.variable}`}
     >
       <body>
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              "try{var t=localStorage.getItem('theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}",
-          }}
-        />
+        <ThemeInitializer />
         {children}
       </body>
     </html>
