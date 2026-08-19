@@ -74,8 +74,8 @@ function CategoryCard({ cat }: { cat: SkillCategory }) {
             {cat.code}
           </p>
           <h3 className="display mt-1 text-xl font-bold uppercase tracking-[0.12em] text-ink">
-            {cat.name}
-          </h3>
+                        <span className="animate-typed">{cat.name}</span>
+                      </h3>
         </div>
 
         <ul className="mt-4 flex flex-1 flex-col px-3 pb-3">
