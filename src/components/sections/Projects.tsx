@@ -77,8 +77,8 @@ export default function Projects({
               </div>
 
               <h3 className="display mt-4 text-2xl font-bold uppercase leading-tight tracking-[0.06em] text-ink md:text-4xl">
-                {PROJECT.name}
-              </h3>
+                        <span className="animate-typed">{PROJECT.name}</span>
+                      </h3>
 
               <p className="mt-5 max-w-3xl text-sm leading-relaxed text-dim md:text-[0.95rem]">
                 {PROJECT.summary}
