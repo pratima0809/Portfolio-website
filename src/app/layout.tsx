@@ -59,7 +59,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-theme="dark"
+      data-theme="light"
       className={`${inter.variable} ${chakra.variable} ${jetbrains.variable}`}
     >
       <body>
