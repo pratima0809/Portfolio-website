@@ -81,9 +81,9 @@ export default function Operations() {
                         <span className="font-mono text-[0.62rem] font-bold text-faint group-hover:text-accent">
                           {s.code}
                         </span>
-                        <h3 className="display text-base font-semibold uppercase tracking-[0.14em] text-ink md:text-lg">
-                          {s.title}
-                        </h3>
+<h3 className="display text-base font-semibold uppercase tracking-[0.14em] text-ink md:text-lg">
+                            <span className="animate-typed">{s.title}</span>
+                          </h3>
                       </div>
                       <p className="flex-1 text-sm leading-relaxed text-dim">
                         {s.desc}

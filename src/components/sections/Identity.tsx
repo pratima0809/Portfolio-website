@@ -53,7 +53,7 @@ export default function Identity() {
 
                 <div>
                   <p className="display text-xl font-bold leading-tight text-ink">
-                    {IDENTITY.codeName}
+                    <span className="animate-typed">{IDENTITY.codeName}</span>
                   </p>
                   <p className="mt-1 font-mono text-[0.62rem] uppercase tracking-[0.2em] text-dim">
                     {IDENTITY.field}
